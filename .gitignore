@@ -569,3 +569,7 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/linux,macos,windows,aspnetcore,visualstudio,visualstudiocode,rust
+
+#Added by cargo
+
+/target
