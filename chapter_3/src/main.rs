@@ -1,5 +1,21 @@
 fn main() {
     days_of_christmas();
+
+    let temp: f32 = 50.0;
+    
+    println!("Temp in fahrenheit: {}", temp);
+    println!("Temp in celsius: {}", fahrenheit_to_celsius(temp));
+
+    println!("Temp in celsius: {}", temp);
+    println!("Temp in fahrenheit: {}", celsius_to_fahrenheit(temp));
+}
+
+fn fahrenheit_to_celsius(f: f32) -> f32 {
+    (f - 32.0) / 1.8
+}
+
+fn celsius_to_fahrenheit(c: f32) -> f32 {
+    c * 1.8 + 32.0
 }
 
 fn days_of_christmas() {
@@ -41,7 +57,7 @@ fn days_of_christmas() {
                 println!("{} {}",rev, gifts[rev-1]);
             }
         }
-        
+
         println!();
     }
 
