@@ -8,6 +8,25 @@ fn main() {
 
     println!("Temp in celsius: {}", temp);
     println!("Temp in fahrenheit: {}", celsius_to_fahrenheit(temp));
+
+    println!("{}",nth_fib(90));
+}
+
+fn nth_fib(mut n: u8) -> u64 {
+    let mut a: u64 = 0;
+    let mut b: u64 = 1;
+    while n >= 2 {
+        let temp = a + b;
+        a = b;
+        b = temp;
+        n -= 1;
+    }
+    if n == 0 {
+        a
+    }
+    else {
+        b
+    } 
 }
 
 fn fahrenheit_to_celsius(f: f32) -> f32 {
